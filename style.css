@@ -1,0 +1,95 @@
+html,
+body {
+  padding: 0px;
+  margin: 0px;
+  height: 100%;
+  width: 100%;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 100%;
+  width: 100%;
+}
+
+.photo {
+  position: absolute;
+  border-radius: 50%;
+  border: white 2px solid;
+  background-image: url("./res/photo.JPG");
+  background-size: cover;
+  background-position: center;
+  height: 35%;
+  width: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Comfortaa;
+  font-size: 30px;
+  letter-spacing: 2px;
+  color: white;
+}
+.about-me {
+  opacity: 0;
+}
+
+.grid-item {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Comfortaa;
+  font-size: 30px;
+  letter-spacing: 2px;
+  transition: background-image ease-in 0.3s;
+}
+.grid-item.achievements {
+  border-left: 2px white solid;
+  border-bottom: 2px solid white;
+}
+.grid-item.my-games {
+  border-left: 2px white solid;
+}
+.grid-item.skills {
+  border-bottom: 2px white solid;
+}
+
+.hover-effect-skills {
+  background-image: url("./res/sakura.gif");
+  background-position: center;
+  background-size: cover;
+  box-shadow: inset 0 0 0 1000px rgb(0, 0, 0, 0.45);
+  cursor: pointer;
+}
+.hover-effect-achievements {
+  background-image: url("./res/fireworks.gif");
+  background-position: center;
+  background-size: cover;
+  box-shadow: inset 0 0 0 1000px rgb(0, 0, 0, 0.45);
+  cursor: pointer;
+}
+.hover-effect-games {
+  background-image: url("./res/unity.gif");
+  background-position: center;
+  background-size: cover;
+  box-shadow: inset 0 0 0 1000px rgb(0, 0, 0, 0.45);
+  cursor: pointer;
+}
+.hover-effect-hobbies {
+  background-image: url("./res/jy.gif");
+  background-position: center;
+  background-size: cover;
+  box-shadow: inset 0 0 0 1000px rgb(0, 0, 0, 0.45);
+  cursor: pointer;
+}
+.photo-hover {
+  box-shadow: inset 0 0 0 1000px rgb(0, 0, 0, 0.45);
+  cursor: pointer;
+}
